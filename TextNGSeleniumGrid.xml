@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="nopcommerce Regression suite" parallel="tests" thread-count="2">
+
+
+    <test name="Regression Test" >
+        <parameter name="browser_Type" value="firefox" />
+        <classes>
+            <class name="tests.userRegisterationTestSeleniumGrid"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->

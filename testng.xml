@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="nopcommerce Regression suite">
+	
+	<parameter name="browser_Type" value="Headless" />
+  	<test name="Regression Test" preserve-order="false">
+	    <classes>
+	      <class name="tests.userRegisterationTest"/>
+	      <class name="tests.AddProductToCompareTest"/>
+	    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-03T16:19:50 EEST" name="nopcommerce Regression suite" finished-at="2024-05-03T16:20:23 EEST" duration-ms="32935">
+    <groups>
+    </groups>
+    <test started-at="2024-05-03T16:19:50 EEST" name="Regression Test" finished-at="2024-05-03T16:20:23 EEST" duration-ms="32935">
+      <class name="tests.userRegisterationTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.userRegisterationTest@16293aa2]" started-at="2024-05-03T16:19:24 EEST" name="startDriver" finished-at="2024-05-03T16:19:50 EEST" duration-ms="25770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="UserCanRegisterSuccessfully()[pri:0, instance:tests.userRegisterationTest@16293aa2]" started-at="2024-05-03T16:19:50 EEST" name="UserCanRegisterSuccessfully" finished-at="2024-05-03T16:20:06 EEST" duration-ms="15513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRegisterSuccessfully -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.userRegisterationTest@16293aa2]" started-at="2024-05-03T16:20:06 EEST" name="takeScreenShot" finished-at="2024-05-03T16:20:06 EEST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanRegisterSuccessfully status=SUCCESS method=userRegisterationTest.UserCanRegisterSuccessfully()[pri:0, instance:tests.userRegisterationTest@16293aa2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method signature="RegisterUserCanLogin()[pri:0, instance:tests.userRegisterationTest@16293aa2]" started-at="2024-05-03T16:20:06 EEST" name="RegisterUserCanLogin" finished-at="2024-05-03T16:20:06 EEST" depends-on-methods="tests.userRegisterationTest.UserCanRegisterSuccessfully" duration-ms="59" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Log in']"}
+  (Session info: chrome=109.0.5414.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d04a5212c4d7e9092a74f7b7569f093, findElement {using=xpath, value=//a[text()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\2B\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:11808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11808/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d04a5212c4d7e9092a74f7b7569f093]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Log in']"}
+  (Session info: chrome=109.0.5414.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d04a5212c4d7e9092a74f7b7569f093, findElement {using=xpath, value=//a[text()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\2B\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:11808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11808/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d04a5212c4d7e9092a74f7b7569f093
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at pages.PageBase.clickButton(PageBase.java:32)
+at pages.HomePage.openLoginPage(HomePage.java:78)
+at tests.userRegisterationTest.RegisterUserCanLogin(userRegisterationTest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUserCanLogin -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.userRegisterationTest@16293aa2]" started-at="2024-05-03T16:20:06 EEST" name="takeScreenShot" finished-at="2024-05-03T16:20:06 EEST" duration-ms="366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisterUserCanLogin status=FAILURE method=userRegisterationTest.RegisterUserCanLogin()[pri:0, instance:tests.userRegisterationTest@16293aa2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.userRegisterationTest@16293aa2]" started-at="2024-05-03T16:20:24 EEST" name="stopDriver" finished-at="2024-05-03T16:20:25 EEST" duration-ms="1047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- tests.userRegisterationTest -->
+      <class name="tests.AddProductToCompareTest">
+        <test-method signature="userCanCompareProducts()[pri:1, instance:tests.AddProductToCompareTest@3a93b025]" started-at="2024-05-03T16:20:06 EEST" name="userCanCompareProducts" finished-at="2024-05-03T16:20:22 EEST" duration-ms="15371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanCompareProducts -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.AddProductToCompareTest@3a93b025]" started-at="2024-05-03T16:20:22 EEST" name="takeScreenShot" finished-at="2024-05-03T16:20:22 EEST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanCompareProducts status=SUCCESS method=AddProductToCompareTest.userCanCompareProducts()[pri:1, instance:tests.AddProductToCompareTest@3a93b025] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method signature="userCanClearCompareList()[pri:2, instance:tests.AddProductToCompareTest@3a93b025]" started-at="2024-05-03T16:20:22 EEST" name="userCanClearCompareList" finished-at="2024-05-03T16:20:23 EEST" duration-ms="1293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanClearCompareList -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.AddProductToCompareTest@3a93b025]" started-at="2024-05-03T16:20:23 EEST" name="takeScreenShot" finished-at="2024-05-03T16:20:23 EEST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanClearCompareList status=SUCCESS method=AddProductToCompareTest.userCanClearCompareList()[pri:2, instance:tests.AddProductToCompareTest@3a93b025] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+      </class> <!-- tests.AddProductToCompareTest -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- nopcommerce Regression suite -->
+</testng-results>
